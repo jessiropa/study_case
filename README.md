@@ -55,17 +55,14 @@ Bayangkan Anda memiliki daftar karyawan (seperti array `$daftarKaryawan` yang be
 
 _Contoh data satu karyawan:_
 
-- Karyawan:
-
--Nama: "Doni Pratama"
-
--Posisi: "Junior Developer"
-
--Departemen: "IT"
-
--Gaji: 7500000
-
--Rating Kinerja Bulan Ini: 4.5 (skala 1-5)
+```php
+[
+    "nama" => "Doni Pratama",
+    "posisi" => "Junior Developer",
+    "departemen" => "IT",
+    "gaji" => 7500000,
+    "rating_kinerja_bulan_ini" => 4.5
+]
 
 _(Anda perlu membuat setidaknya 5 karyawan dengan data yang bervariasi.)_
 
@@ -90,3 +87,4 @@ _(Anda perlu membuat setidaknya 5 karyawan dengan data yang bervariasi.)_
     - Cetak **rata-rata rating kinerja** dari **semua karyawan aktif** secara keseluruhan.
 
 ---
+```
