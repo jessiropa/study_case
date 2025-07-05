@@ -53,18 +53,15 @@ Anda diminta untuk membantu departemen HR dalam mengidentifikasi "Karyawan Terba
 
 Bayangkan Anda memiliki daftar karyawan (seperti array `$daftarKaryawan` yang berisi beberapa karyawan, masing-masing dengan `nama`, `posisi`, `departemen`, `gaji`, dan `rating_kinerja_bulan_ini` dengan skala 1-5, bisa desimal).
 
-_Contoh data satu karyawan:_
+Berikut adalah contoh data untuk satu karyawan:
 
-```php
-[
-    "nama" => "Doni Pratama",
-    "posisi" => "Junior Developer",
-    "departemen" => "IT",
-    "gaji" => 7500000,
-    "rating_kinerja_bulan_ini" => 4.5
-]
+- Nama: "Doni Pratama"
+- Posisi: "Junior Developer"
+- Departemen: "IT"
+- Gaji: 7500000
+- Rating Kinerja Bulan Ini: 4.5
 
-_(Anda perlu membuat setidaknya 5 karyawan dengan data yang bervariasi.)_
+Anda perlu membuat setidaknya 5 karyawan dengan data yang bervariasi mengikuti struktur di atas.
 
 **Tugas Anda (Apa yang Perlu Dilakukan dengan PHP):**
 
@@ -87,4 +84,3 @@ _(Anda perlu membuat setidaknya 5 karyawan dengan data yang bervariasi.)_
     - Cetak **rata-rata rating kinerja** dari **semua karyawan aktif** secara keseluruhan.
 
 ---
-```
