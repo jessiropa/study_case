@@ -54,17 +54,18 @@ Anda diminta untuk membantu departemen HR dalam mengidentifikasi "Karyawan Terba
 Bayangkan Anda memiliki daftar karyawan (seperti array `$daftarKaryawan` yang berisi beberapa karyawan, masing-masing dengan `nama`, `posisi`, `departemen`, `gaji`, dan `rating_kinerja_bulan_ini` dengan skala 1-5, bisa desimal).
 
 _Contoh data satu karyawan:_
-\*Karyawan:
 
-\*Nama: "Doni Pratama"
+- Karyawan:
 
-\*Posisi: "Junior Developer"
+-Nama: "Doni Pratama"
 
-\*Departemen: "IT"
+-Posisi: "Junior Developer"
 
-\*Gaji: 7500000
+-Departemen: "IT"
 
-\*Rating Kinerja Bulan Ini: 4.5 (skala 1-5)
+-Gaji: 7500000
+
+-Rating Kinerja Bulan Ini: 4.5 (skala 1-5)
 
 _(Anda perlu membuat setidaknya 5 karyawan dengan data yang bervariasi.)_
 
