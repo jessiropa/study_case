@@ -122,8 +122,13 @@ $data .="<b> DAFTAR KARYAWAN TERBAIK BULAN JUNI : </b><br><br>";
 // array_multisort($rating, SORT_DESC, $data_karyawan);
 array_multisort(array_column($data_karyawan, 'rating'), SORT_DESC, $data_karyawan);
 
+$topRating = 0;
+if (!empty($data_karyawan)) {
+    $topRating = $data_karyawan[0]['rating']; // Ambil rating tertinggi pertama
+}
+
 foreach($data_karyawan as $srt){
-    if($srt['aktif'] == true){
+    if($srt['aktif'] == true && $srt['rating'] == $topRating){
        $data .= "Nama : ".$srt['nama']." <br> ";
        $data .= "Departemen : ".$srt['departemen']." <br> ";
         $data .= "Rating Bulan Juni : ".$srt['rating']." <br> <br>";
@@ -178,7 +183,7 @@ $data .= "<p> Total karyawan departemen IT : ".$it." orang </p>";
 $data .= "<p> Total karyawan departemen Finance : ".$finance." orang </p>";
 if($jumlahKaryawanMemilikiRating > 0){
     // $totalRatingSemuaKaryawan / $jumlahKaryawanMemilikiRating;
-    $data .= "<p> Total rata-rata rating karyawan bulan juni : ".$total_rating / $jumlahKaryawanMemilikiRating."</p>";
+    $data .= "<p> Total rata-rata rating karyawan bulan juni : ".number_format($total_rating / $jumlahKaryawanMemilikiRating, 2)."</p>";
 }
 
 
